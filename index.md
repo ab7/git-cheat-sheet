@@ -33,3 +33,38 @@ git commit --amend                  # update most recent commit
 ```
 
 [https://git-scm.com/docs/git-commit](https://git-scm.com/docs/git-commit)
+
+## Commit management
+
+```
+git reset                         # unstage changes ready for commit
+git reset head~N                  # undo N most recent commits
+git reset --hard origin <branch>  # reset local branch to remote
+git checkout <file>               # throw away changes
+git stash                         # stash current changes
+git stash apply                   # apply the most recent stash
+git stash list                    # list currently stashed changes
+git stash apply stash@{N}         # apply stash at index N
+git log                           # list commits
+```
+
+[https://git-scm.com/docs/git-reset](https://git-scm.com/docs/git-reset) & [https://git-scm.com/docs/git-stash](https://git-scm.com/docs/git-stash)
+
+## Branches
+
+```
+git checkout -b awesome-feature  # create new branch
+git branch                       # lists all branches
+git branch -d awesome-feature    # delete branch without changes
+git branch -D awesome-feature    # force delete branch
+```
+
+[https://git-scm.com/docs/git-branch](https://git-scm.com/docs/git-branch)
+
+## Merging
+
+```
+git merge <branch>  # merge another branch into your current branch
+```
+
+[https://git-scm.com/docs/git-merge](https://git-scm.com/docs/git-merge)
