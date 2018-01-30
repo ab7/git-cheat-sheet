@@ -68,3 +68,13 @@ git merge <branch>  # merge another branch into your current branch
 ```
 
 [https://git-scm.com/docs/git-merge](https://git-scm.com/docs/git-merge)
+
+## Rebasing
+
+```
+git rebase
+git rebase -i <branch>  # move commits in branch to top of <branch>
+git rebase -i head~N    # modify N previous commits
+```
+
+[https://git-scm.com/docs/git-rebase](https://git-scm.com/docs/git-rebase)
