@@ -72,9 +72,29 @@ git merge <branch>  # merge another branch into your current branch
 ## Rebasing
 
 ```
-git rebase
 git rebase -i <branch>  # move commits in branch to top of <branch>
 git rebase -i head~N    # modify N previous commits
 ```
 
 [https://git-scm.com/docs/git-rebase](https://git-scm.com/docs/git-rebase)
+
+## Merge conflicts
+
+```
+git merge|rebase --continue  # run after resolving conflicts
+git merge|rebase --abort     # cancel merge|rebase
+```
+
+[https://git-scm.com/docs/git-merge](https://git-scm.com/docs/git-merge)
+
+## Remotes
+
+```
+git remote add origin <remote-address>      # add a remote called origin
+git push -u origin master                   # push master to remote repo
+git remote -v                               # list current remotes
+git remote set-url origin <remote-address>  # change remote address
+```
+
+[https://git-scm.com/docs/git-remote](https://git-scm.com/docs/git-remote)
+
